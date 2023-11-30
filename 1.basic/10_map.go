@@ -48,6 +48,7 @@ func duplicate(v []int) {
 		}
 	}
 
+	delete(dup, 1)
 	for k, val := range dup {
 		if val.(int) > 1 {
 			fmt.Println("duplicate: ", k, " value ", val)
